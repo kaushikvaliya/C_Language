@@ -1,0 +1,2 @@
+vowel = 5
+cons = 21
