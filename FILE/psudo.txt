@@ -1,0 +1,35 @@
+Additional Activities
+Practice Pseudocode
+In this activity you will write your own pseudocode program to accomplish a simple task.
+
+Step 1: Choose a Task
+Choose a simple task to accomplish with your program. You want this to be complex enough to require multiple steps while still being relatively simple to accomplish. Some ideas are:
+Walk across a room
+Find the difference between two numbers
+Determine if a number is even or odd
+
+Step 2: Write the Pseudocode
+When writing the code, remember the four guidelines:
+The language should be universal.
+Limit each line to one task/action.
+Capitalize all key words (even if not at the beginning of a sentence).
+Indent loops (like if/then statements)
+Don't forget to start with 'Start Program' and end with 'End Program'.
+
+Step 3: Test Your Code
+After you have written your pseudocode program, put it aside for at least 1 day (more is better).
+The act of resting the ideas you have written will help you to edit your work more accurately later.
+When you are ready, try to follow your program exactly.
+Did you accomplish the task?
+If you were not successful in completing the task, trouble shoot your program to find out why.
+You have likely left out a small step that seemed logical to you as you were writing the code, but needed to be spelled out to get an accurate program.
+If you needed to do any trouble shooting, wait another day or two before testing your code again.
+Continue to test until you successfully include all steps required to complete your task.
+Alternatively, you can ask someone to attempt to complete your task following your pseudocode precisely.
+Troubleshoot as described above.
+
+Examples
+See the lesson for examples of simple programs to:
+Add numbers
+Find geometric calculations
+Compare numbers

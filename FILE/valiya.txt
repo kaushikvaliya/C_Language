@@ -1,0 +1,8 @@
+code : 123
+name : kaushik
+salary : 20000.00
+mobaile number : 8905512020
+code : 1234
+name : kkkk
+salary : 20000.00
+mobaile number : 8905512020
