@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        
+        .preloader {
+            position: fixed;
+            top: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: rgb(17, 17, 17);
+            z-index: 100000000000;
+        }
+        
+        .preloader::before {
+            content: 'loading';
+            position: absolute;
+            bottom: 5rem;
+            font-size: 12em;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: rgba(240, 248, 255, 0.249);
+        }
+        
+        .preloader.active {
+            transform: translateY(-100vh);
+            transition: ease-in-out 2s;
+            transition-delay: 1s;
+        }
+        
+        .counter {
+            top: -7rem;
+            position: relative;
+            color: #fff;
+            font-size: 16em;
+            font-weight: 700;
+            z-index: 1;
+        }
+        
+        .counter::after {
+            content: '%';
+            font-size: 0.5em;
+        }
+        
+        .hide {
+            opacity: 0;
+            transition: 1s;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="counter">0</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit explicabo sequi odit voluptas minus veritatis suscipit recusandae blanditiis! Qui repudiandae suscipit doloremque, fuga placeat provident similique error voluptatum vero?</p>
+    </section>
+
+    <script type="text/javascript">
+        function counter() {
+            var count = setInterval(function() {
+                var c = parseInt($('.counter').text());
+                $('.counter').text((++c).toString());
+                if (c == 100) {
+                    clearInterval(count);
+                    $('.counter').addClass('hide')
+                    $('.preloader').addClass('active')
+                }
+
+            }, 60)
+        }
+        counter()
+    </script>
+</body>
+
+</html>
